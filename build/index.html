@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="custom-style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 </head>
 <body>  
     <header>
       <div class="container">
-        <h1>My portfolio</h1>
+        <h1 class="text-3xl"><i><e>My portfolio</e></i></h1>
         <nav>
           <ul>
             <li><a href="#Home">Home</a></li>
@@ -27,73 +31,89 @@
           <h2 class="welcome">Welcome!</h2>
           <p>Hello there👋, This is Daniel</p>
         </div>
-      </article>
+      </article> 
 
       <article id="About">
         <h2 class="text-3xl font-bold">About Me</h2>
 
-        <br />
+        <br/>
 
-        <div class="profile">
-          <p>
-            Hi! I'm Daniel, born and raised in Addis Ababa i have graduated high
-            school from Kotebe University of Education Science Shared Campus.
-            Currently i am a 1st year computer science student at Addis Ababa
-            University. <br />Even though i had a little prior experience with
-            web develpment in high school from the time i've joined Directed
-            Developmet Association web development bootcamp my progress has been
-            nothing but amazing and hopefully soon i will be a qualified web
-            developer & Designer and also showcase my innate abilities.
-          </p>
+        <div class="main-block">
+            <div class="text-block">
+            <p>
+                Hi! I'm Daniel, born and raised in Addis Ababa i have graduated high
+                school from Kotebe University of Education Science Shared Campus.
+                Currently i am a 1st year computer science student at Addis Ababa
+                University. <br />Even though i had a little prior experience with
+                web develpment in high school from the time i've joined Directed
+                Developmet Association web development bootcamp my progress has been
+                nothing but amazing and hopefully soon i will be a qualified web
+                developer & Designer and also showcase my innate abilities.
+            </p>
+            </div>
+            <div class="image-block "><img src="img/pic.png" alt="picture"></div>
         </div>
       </article>
 
+      <!--  <articles id="Projects">
+        <div class="project-container block">
+            <p class="text-3xl font-bold justify-center items-center">Projects</p>
+            <div class="project"><p>Little-taco-shop</p></div>
+            <div class="project"><p>AcmeRocket</p></div>
+        </div>
+      </articles>
+    -->   
       <articles id="Projects">
-
+          <div class="project-container">
+              <p class="text-3xl font-bold mb-4">Projects 👉</p>
+              <div class="project">
+                  <p class="text-3xl font-bold mt-4"><span>Little-taco-shop</span> <br> <span class="view"><a href="https://github.com/danielbirhanu/Little-taco-shop" alt="my project">View Project</a></span></p>
+              </div>
+              <div class="project">
+                  <p class="text-3xl font-bold mx-4 mt-4 ">AcmeRocket <br> <span class="view"><a href="https://github.com/danielbirhanu/AcmeRocket" alt="my project">View Project</a></span></p>
+              </div>
+          </div>
+          <!-- <hr class="mx-auto bg-black dark:bg-white w-1/2 m-10"> -->
       </articles>
 
       <article id="Contact">
-        <h2 class="text-3xl font-bold">Contact Me</h2>
+        <h2 class="text-3xl font-bold mt-25">Contact Me</h2>
 
-        <br />
+        <br/> 
 
-        <form class="">
-          
-            <div class="w-1/2">
-              <label class="text-center" for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
+        <div>
+            <form>
+                <div>
+                    <label class="text-center" for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required />
             </div>
-            <div class="w-1/2">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required /> </div>
-          
 
-          <div>
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required />
-          </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
 
-          <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-
-          <button type="submit">Send</button>
-        </form>
+            <button type="submit">Send</button>
+            </form>
+        </div>
       </article>
     </main>
     <footer>
       <div class="container">
         <ul class="social-links">
-          <li>
-            <a target="_blank" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.github.com"><i class="fa fa-github"></i></a>
-          </li>
+            <li><a target="_blank" href="https://twitter.com/daniel_birhanu1"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/daniel-birhanu-8717b8288"><i class="fa fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="https://github.com/danielbirhanu"><i class="fa fa-github"></i></a></li>
+            <li><a target="_blank" href="tel:+251954355685"><i class="fa fa-phone"></i></a></li>
         </ul>
       </div>
       <p>&copy; Daniel Birhanu</p>
