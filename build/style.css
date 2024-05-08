@@ -1024,5 +1024,10 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(87 83 78 / var(--tw-bg-opacity));
   }
+
+  .dark\:bg-slate-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  }
 }
 
