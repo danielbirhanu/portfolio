@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="custom-style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-</head>
-<body>  
-    <header>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="custom-style.css">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <script src="js/style.js"></script>
+  </head>
+  <body>  
+    <!-- <header>
       <div class="container">
         <h1 class="text-3xl"><i><e>My portfolio</e></i></h1>
         <nav>
@@ -24,7 +25,39 @@
           </ul>
         </nav>
       </div>
+    </header> -->
+
+    <header class="sticky top-0 z-10 bg-black text-white">
+      <section class="mx-auto flex max-w-7xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <a href="#Home"><I>Portfolio</I></a>
+        </h1>
+        <div>
+          <button id="hamburger-button" class="bg-black border-spacing-0 relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+            
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+            </div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+            <a href="#About" class="hover:opacity-90">About Me</a>
+            <a href="#Projects" class="hover:opacity-90">Projects</a>
+            <a href="#Contact" class="hover:opacity-90">Contact Me</a>
+          </nav>
+        </div>
+      </section>
+      <section id="mobile-menu"
+        class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
+  
+        <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+          <a href="#Home" class="w-full py-6 text-center hover:opacity-90">Home</a>
+          <a href="#About" class="w-full py-6 text-center hover:opacity-90">About Me</a>
+          <a href="#Projects" class="w-full py-6 text-center hover:opacity-90">Projects</a>
+          <a href="#Contact" class="w-full py-6 text-center hover:opacity-90">Contact Me</a>
+        </nav>
+      </section>
     </header>
+      
     <main>
       <article id="Home">
         <div class="welcome-container">
@@ -38,7 +71,7 @@
 
         <br/>
 
-        <div class="main-block">
+        <div class="main-block pb-10">
             <div class="text-block">
             <p>
                 Hi! I'm Daniel, born and raised in Addis Ababa i have graduated high
@@ -51,7 +84,7 @@
                 developer & Designer and also showcase my innate abilities.
             </p>
             </div>
-            <div class="image-block "><img src="img/pic.png" alt="picture"></div>
+            <div class="image-block max-h-90"><img src="img/pic.png" alt="picture"></div>
         </div>
       </article>
 
@@ -67,11 +100,12 @@
           <div class="project-container">
               <p class="text-3xl font-bold mb-4">Projects 👉</p>
               <div class="project">
-                  <p class="text-3xl font-bold mt-4"><span>Little-taco-shop</span> <br> <span class="view"><a href="https://github.com/danielbirhanu/Little-taco-shop" alt="my project">View Project</a></span></p>
+                  <p class="text-3xl font-bold mx-4 mt-4 text-center">AcmeRocket <br> <span class="view"><a href="https://github.com/danielbirhanu/AcmeRocket" alt="my project">View Project</a></span></p>
               </div>
               <div class="project">
-                  <p class="text-3xl font-bold mx-4 mt-4 ">AcmeRocket <br> <span class="view"><a href="https://github.com/danielbirhanu/AcmeRocket" alt="my project">View Project</a></span></p>
+                  <p class="text-3xl font-bold mx-4 mt-4 text-center">Little-taco-shop<br> <span class="view"><a href="https://github.com/danielbirhanu/Little-taco-shop" alt="my project">View Project</a></span></p>
               </div>
+              
           </div>
           <!-- <hr class="mx-auto bg-black dark:bg-white w-1/2 m-10"> -->
       </articles>
@@ -118,5 +152,6 @@
       </div>
       <p>&copy; Daniel Birhanu</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

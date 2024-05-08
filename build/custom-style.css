@@ -1,47 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url("img/bgcolor.jpg");
-    object-fit: contain;
 }
 
-header {
-    background-color:#000;
-    color: #fff;
-    padding: 20px;
-}
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-@media (max-width: 600px){
-    nav ul{
-        flex-direction: column;
-    }
-    nav ul li{
-        display: block;
-        margin: 10px;
-    }
-}
-
+ 
  main{
-    background-image: url('img/bgcolor.jpg');
     padding: 15px;
 }
 
@@ -127,6 +92,7 @@ nav ul li a {
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     display: flex;
     max-height: 100%;
+    overflow: hidden;
 }
 
 .text-block{
@@ -134,7 +100,6 @@ nav ul li a {
 }
 
 .image-block{
-    object-fit:cover;
     flex: 1;
 }
 
@@ -296,5 +261,6 @@ border-radius: 50%;
 .social-links li {
     display: block;
     margin: 5px 0;
+    border-radius: 5dvh;
 }
 }
