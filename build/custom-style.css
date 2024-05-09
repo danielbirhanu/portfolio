@@ -91,6 +91,8 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-height: 100%;
     overflow: hidden;
 }
@@ -143,6 +145,9 @@ body {
 }
 
 @media (max-width: 768px) {
+.text-block {
+    font-size: 0.75rem;
+}
 .project-container {
     flex-direction: column;
 }
